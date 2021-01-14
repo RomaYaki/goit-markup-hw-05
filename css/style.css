@@ -37,7 +37,7 @@ header {
 
 .logo-header {
   padding-top: 24px;
-  padding-bottom: 25px;
+  padding-bottom: 15px;
 }
 
 .container-nav {
@@ -86,9 +86,11 @@ header {
 }
 
 .nav-link {
+  position: relative;
   display: block;
-  padding-top: 20px;
-  padding-bottom: 20px;
+  padding-top: 25px;
+  padding-bottom: 25px;
+  margin-top: 10px;
 
   color: var(--text-color);
 
@@ -97,6 +99,27 @@ header {
   font-weight: 500;
   line-height: 16px;
   letter-spacing: 0.02em;
+}
+
+.nav-link::after {
+  content: "";
+
+  position: absolute;
+
+  bottom: 0;
+  left: 0;
+  display: block;
+  width: 100%;
+  height: 4px;
+  border-radius: 4px;
+  background-color: var(--accent-color);
+  opacity: 0;
+
+  transition: opasity 250ms linear;
+}
+
+.nav-link:hover::after {
+  opacity: 1;
 }
 
 .nav-link:focus,
@@ -275,7 +298,7 @@ p {
   color: var(--sec-text-color);
 }
 
-/* чем занимаемся */
+/* WWD */
 
 .wwd-section {
   padding-top: 94px;
@@ -309,7 +332,33 @@ p {
 
 .wwd-img-li {
   margin-right: 30px;
+  position: relative;
 }
+
+.wwd-shadow {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 70px;
+  background: rgba(47, 48, 58, 0.8);
+}
+
+.shadow-text {
+  margin: 0;
+  padding-top: 27px;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 16px;
+  text-align: center;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+
+  color: #ffffff;
+}
+
 .wwd-img-li:last-child {
   margin-right: 0px;
 }
@@ -663,6 +712,41 @@ footer {
 
 /* PORTFOLIO PHOTO */
 
+.photo-portfolio {
+  position: relative;
+  overflow: hidden;
+}
+
+.portfolio-overlay {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(33, 150, 243, 0.9);
+
+  transform: translateY(100%);
+  transition: transform 250ms linear;
+}
+
+.photo-element:hover .portfolio-overlay {
+  transform: translateY(0);
+}
+
+.ppt {
+  padding-left: 24px;
+  padding-top: 63px;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 28px;
+  /* or 156% */
+  letter-spacing: 0.03em;
+
+  color: #ffffff;
+}
+
 .photo-ul {
   display: flex;
   flex-wrap: wrap;
@@ -742,6 +826,24 @@ footer {
   height: 581px;
   background-color: var(--main-background-color);
 
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.modal-close {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background: #ffffff;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.modal-x {
   position: absolute;
   top: 50%;
   left: 50%;
