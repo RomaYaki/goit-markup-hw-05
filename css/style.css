@@ -756,7 +756,7 @@ footer {
 .photo-element {
   margin-right: 30px;
   margin-bottom: 30px;
-  border: 1px solid #eeeeee;
+  /* border: 1px solid #eeeeee; */
   box-sizing: border-box;
 }
 
