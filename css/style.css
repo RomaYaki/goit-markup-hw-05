@@ -400,6 +400,7 @@ p {
   background-color: var(--main-background-color);
 
   transition: color var(--animation-time) var(--animation-type);
+  transition: background-color var(--animation-time) var(--animation-type);
 }
 
 .social-icon {
@@ -714,7 +715,8 @@ footer {
   text-align: center;
   text-decoration: none;
   line-height: 26px;
-  transition: color var(--animation-time) var(--animation-type);
+  transition: color var(--animation-time) var(--animation-type),
+    background-color var(--animation-time) var(--animation-type);
 }
 .portfolio-button:focus,
 .portfolio-button:hover {
