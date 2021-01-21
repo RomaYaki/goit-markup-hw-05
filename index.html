@@ -429,6 +429,7 @@
                 </div>
             </div>
     </footer>
+
     <div class="backdrop is-hidden" data-backdrop>
         <div class="modal">
             <button class="modal-close" data-close-modal>
@@ -436,6 +437,49 @@
                     <use href="./photo/icomoon/symbol-defs.svg#icon-close-black"></use>
                 </svg>
             </button>
+
+            <div class="modal-container">
+                
+                <h2 class="modal-text">Оставьте свои данные, мы вам перезвоним</h2>
+                
+                <form autocomplete="off">
+                    <label>
+                        <div class="name-modal">Имя</div>
+                        <input type="text" name="username" class="input">
+                    </label>
+                    
+                    <label>
+                        <div class="phone-modal">Телефон</div>
+                        <input type="tel" name="phone_number" class="input">
+                    </label>
+                    
+                    <label>
+                        <div class="mail-modal">Почта</div>
+                        <input type="email" name="email" class="input">
+                    </label>
+                    
+                    <label>
+                        <div class="text-extra">Комментарий</div>
+                        <textarea name="textarea" placeholder="Введите текст" class="textarea-madal"></textarea>
+                    </label>
+                    
+                    <div class="checkbox-modal">
+                       <label>
+                            <input type="checkbox" name="agre">
+                            <span class="text-agre">
+                                Соглашаюсь с рассылкой и принимаю
+                            </span>
+                            <a class="agre-link" href="#">
+                                Условия договора
+                            </a>
+                        </label>
+                    </div>
+
+                    <button type="button" class="button-modal">Отправить</button>
+                    
+                </form>
+            </div>
+
         </div>
     </div>
 
