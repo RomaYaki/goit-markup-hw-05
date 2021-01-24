@@ -443,42 +443,61 @@
                 <h2 class="modal-text">Оставьте свои данные, мы вам перезвоним</h2>
                 
                 <form autocomplete="off">
+                    <!-- name -->
                     <label>
                         <div class="name-modal">Имя</div>
-                        <input type="text" name="username" class="input">
                         <div class="modal-icon-container">
-                            <div class="modal-icon">
-                                <svg class="social-icon">
+                            <input type="text" name="username" class="input">
+                            
+                                <svg class="modal-icon">
                                     <use href="./photo/icomoon/symbol-defs.svg#icon-person-modal"></use>
                                 </svg>
-                            </div>
+                            
                         </div>
                     </label>
-                    
+                    <!-- phone -->
                     <label>
                         <div class="phone-modal">Телефон</div>
-                        <input type="tel" name="phone_number" class="input">
+                        <div class="modal-icon-container">
+                            <input type="tel" name="phone_number" class="input">
+                        
+                            
+                                <svg class="modal-icon">
+                                    <use href="./photo/icomoon/symbol-defs.svg#icon-phone-modal"></use>
+                                </svg>
+                            
+                        </div>
                     </label>
-                    
+                    <!-- mail -->
                     <label>
                         <div class="mail-modal">Почта</div>
-                        <input type="email" name="email" class="input">
+                        <div class="modal-icon-container">
+                            <input type="email" name="email" class="input">
+                        
+                            
+                                <svg class="modal-icon">
+                                    <use href="./photo/icomoon/symbol-defs.svg#icon-email-modal"></use>
+                                </svg>
+                            
+                        </div>
                     </label>
-                    
+                    <!-- coment -->
                     <label>
                         <div class="text-extra">Комментарий</div>
                         <textarea name="textarea" placeholder="Введите текст" class="textarea-madal"></textarea>
                     </label>
-                    
+                    <!-- checkbox -->
                     <div class="checkbox-modal">
                        <label>
-                            <input type="checkbox" name="agre">
+                            <input type="checkbox" name="agre" class="checkbox">
+                            <span class="checkbox-icon"></span>
                             <span class="text-agre">
                                 Соглашаюсь с рассылкой и принимаю
                             </span>
                             <a class="agre-link" href="#">
                                 Условия договора
                             </a>
+                            
                         </label>
                     </div>
 
