@@ -363,9 +363,9 @@
     </main>
 
     <footer>
-            <div class="footer-container">
-                <!-- Addres -->
-                <div class="footer-addres">
+        <div class="footer-container">
+            <!-- Addres -->
+            <div class="footer-addres">
                     <div class="footer-logo">
                         <a href="./"><span class="logo-foot">Web</span><span class="logo-white">Studio</span></a>
                     </div>
@@ -387,9 +387,9 @@
                             </li>
                         </ul>
                     </div>
-                </div>
-                <!-- Social -->
-                <div class="footer-social">
+            </div>
+            <!-- Social -->
+            <div class="footer-social">
                     <div class="foot-txt">
                         <h3 class="follow-text">ПРИСОЕДИНЯЙТЕСЬ</h3>
                     </div>
@@ -426,10 +426,27 @@
                             </li>
                         </ul>
                     </div>
-                </div>
             </div>
+            <!-- Follow modal -->
+            <div class="send-container">
+                <form autocomplete="off">
+                    <label>
+                        <h3 class="follow-text">Подпишитесь на рассылку</h3>
+                        <input type="email" placeholder="E-mail" class="footer-follow">
+                        <button class="follow-button">
+                            Подписаться 
+                            <svg class="sand-icon">
+                                <use href="./photo/icomoon/symbol-defs.svg#icon-icon-send"></use>
+                            </svg>
+
+                        </button>
+                    </label>
+                </form>
+            </div>
+        </div>
     </footer>
 
+    <!-- MODAL -->
     <div class="backdrop is-hidden" data-backdrop>
         <div class="modal">
             <button class="modal-close" data-close-modal>
@@ -473,12 +490,9 @@
                         <div class="mail-modal">Почта</div>
                         <div class="modal-icon-container">
                             <input type="email" name="email" class="input">
-                        
-                            
                                 <svg class="modal-icon">
                                     <use href="./photo/icomoon/symbol-defs.svg#icon-email-modal"></use>
                                 </svg>
-                            
                         </div>
                     </label>
                     <!-- coment -->
@@ -488,7 +502,7 @@
                     </label>
                     <!-- checkbox -->
                     <div class="checkbox-modal">
-                       <label>
+                       <label class="label">
                             <input type="checkbox" name="agre" class="checkbox">
                             <span class="checkbox-icon"></span>
                             <span class="text-agre">
